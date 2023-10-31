@@ -2,9 +2,9 @@ from . import __version__ as app_version
 
 app_name = "tianjy_patch"
 app_title = "Tianjy Patch"
-app_publisher = "guigu"
+app_publisher = "Tianjy"
 app_description = "Tianjy Patch"
-app_email = "guigu"
+app_email = "Tianjy"
 app_license = "MIT"
 
 # Includes in <head>

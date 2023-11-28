@@ -7,12 +7,12 @@ app_description = "Tianjy Patch"
 app_email = "Tianjy"
 app_license = "MIT"
 
-# Includes in <head>
-# ------------------
-
 # include js, css files in header of desk.html
 # app_include_css = "/assets/tianjy_patch/css/tianjy_patch.css"
-# app_include_js = "/assets/tianjy_patch/js/tianjy_patch.js"
+app_include_js = "tianjy_patch.bundle.js"
+
+# Includes in <head>
+# ------------------
 
 # include js, css files in header of web template
 # web_include_css = "/assets/tianjy_patch/css/tianjy_patch.css"

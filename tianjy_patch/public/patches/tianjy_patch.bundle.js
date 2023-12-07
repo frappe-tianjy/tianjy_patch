@@ -1,3 +1,3 @@
 import './filter';
 import './form';
-import './event/a.click';
+import './router';

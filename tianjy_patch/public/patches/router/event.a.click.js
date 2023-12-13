@@ -15,8 +15,7 @@ $('body').on('click', 'a', function (e) {
 	}
 	const target_element = e.currentTarget;
 	const href = target_element.getAttribute('href');
-	const is_on_same_host = target_element.hostname === window.location.hostname
-		&& (target_element.search ||'?') === (window.location.search || '?');
+	const is_on_same_host = target_element.hostname === window.location.hostname;
 	const override = route => {
 		e.preventDefault();
 		frappe.set_route(route);

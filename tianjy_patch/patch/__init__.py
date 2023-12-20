@@ -1,2 +1,3 @@
 import tianjy_patch.patch.response
 import tianjy_patch.patch.patch_extract_images_from_html
+import tianjy_patch.patch.rename_doc

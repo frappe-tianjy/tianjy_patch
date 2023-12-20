@@ -1,7 +1,7 @@
 frappe.views.Workspace.prototype.add_drop_icon = function(item, sidebar_control, item_container) {
-	let drop_icon = 'small-down';
+	let drop_icon = 'es-line-down';
 	if (item_container.find(`[item-name="${this.current_page.name}"]`).length) {
-		drop_icon = 'small-up';
+		drop_icon = 'es-line-up';
 	}
 	// 修改源码，这里只展开到子级，而不是查找所有后代
 	let $child_item_section = item_container.children('.sidebar-child-item');
@@ -18,9 +18,9 @@ frappe.views.Workspace.prototype.add_drop_icon = function(item, sidebar_control,
 	}
 	$drop_icon.on('click', () => {
 		let icon =
-			$drop_icon.find('use').attr('href') === '#icon-small-down'
-				? '#icon-small-up'
-				: '#icon-small-down';
+			$drop_icon.find('use').attr('href') === '#es-line-down'
+				? '#es-line-up'
+				: '#es-line-down';
 		$drop_icon.find('use').attr('href', icon);
 		$child_item_section.toggleClass('hidden');
 	});

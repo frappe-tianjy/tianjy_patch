@@ -12,14 +12,6 @@ frappe.router.set_route = function() {
 		if (frappe.route_search) {
 			sub_path += frappe.route_search;
 			frappe.route_search = null;
-		} else if (frappe.route_options) {
-			const params = [];
-			for (const [key, value] of Object.entries(frappe.route_options)) {
-				params.push(`${encodeURIComponent(key)}=${encodeURIComponent(value)}`);
-			}
-			if (params.length) {
-				sub_path += `?${params.join('&')}`;
-			}
 		}
 		sub_path += frappe.route_hash || '';
 		frappe.route_hash = null;
